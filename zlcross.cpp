@@ -200,7 +200,7 @@ BOOL BMP2Txt(LPCSTR BitmapFile, char *outputText )
 
 		static int curPix = 0;
 		int totalPix = bm.bmWidth * bm.bmHeight;
-		os	<< "<html>\n<head>\n<meta http-equiv=content-type content=\"text/html; charset=GB2312\" />\n<title>ILoveBB</title>\n"
+		os	<< "<html>\n<head>\n<meta http-equiv=content-type content=\"text/html; charset=GB2312\" />\n<title>table</title>\n"
 			<< "<style>\n"
 			<< "td{border: 1px solid #888888; height: 6px; width: 6px; text-align: center; vertical-align: baseline; line-height: 6px; font-size: 7px; font-family: 宋体;}\n"
 			<< "</style>\n</head>\n<body leftmargin=\"0\" topmargin=\"0\" marginwidth=\"0\" marginheight=\"0\" bgcolor = \"#FFFFFF\">\n"
@@ -315,7 +315,7 @@ BOOL BMP2Txt(LPCSTR BitmapFile, char *outputText )
 	//开始生成效果图
 	std::map<COLORREF,int>	mColorUsage;	//每种颜色的用量
 	std::ofstream os("temp.htm");
-	os	<< "<html>\n<head>\n<meta http-equiv=content-type content=\"text/html; charset=GB2312\" />\n<title>ILoveBB</title>\n"
+	os	<< "<html>\n<head>\n<meta http-equiv=content-type content=\"text/html; charset=GB2312\" />\n<title>table</title>\n"
 		<< "<style>\n"
 		<< "td{border: 1pt solid #dddddd; height: 6pt; width: 6pt; text-align: center; vertical-align: baseline; line-height: 6pt; font-size: 7pt; font-family: 宋体;}\n"
 		<< "</style>\n</head>\n<boby leftmargin=\"0\" topmargin=\"0\" marginwidth=\"0\" marginheight=\"0\">\n"
