@@ -287,7 +287,7 @@ BOOL BMP2Txt(LPCSTR BitmapFile, char *outputText )
 							//ColorAddBright(r,g,b);
 							char colorStr[8] = {0};
 							sprintf(colorStr, "#%x%x%x%x%x%x", r>>4,r&0x0f,g>>4,g&0x0f,b>>4,b&0x0f);
-							os << " style = \"color: " << ( ( abs(color - RGB(0,0,0)) > abs(color - RGB(255,255,255)))? "BLACK;":"WHITE;" ) << " background-color:" << colorStr << "\"";
+							os << " style = \"color: " << ( ( abs(long(color - RGB(0,0,0))) > abs(long(color - RGB(255,255,255))))? "BLACK;":"WHITE;" ) << " background-color:" << colorStr << "\"";
 						}
 
 						os << ">";
